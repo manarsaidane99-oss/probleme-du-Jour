@@ -15,10 +15,8 @@ console.log(nombre(6,6));
 // si elle est vide, sinon false
 
 function chVide(string) {
-  if (string==="") {
-    return "true"
-  }
-  return "false"
+
+    return (string==="")
 }
 console.log(chVide(""));
 console.log(chVide("manar"));
@@ -57,10 +55,10 @@ console.log(vitesse(-111));
 // MAIS PAS par les deux en même temps
 function divisible( x) {
   if ((x%2===0 && x%3!==0)|| (x%3===0 && x%2!==0)){
-    return "true"
+    return true
   }
   else {
-    return "false"
+    return false
   }
 }
 console.log(divisible(9));
