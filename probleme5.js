@@ -19,9 +19,12 @@ console.log(removeElement([1,2,3],2))
  // exemple : reverseStr('hello'); ==> "o0l1l2e3h4"
 function reverseStr(ch){
   let ch1=""
-  for(let i=ch.length-1;i>=0;i--){
-    ch1+=ch[i]+String(ch.length-1-i)
+  let i=ch.length-1
+  while(i>=0){
+     ch1+=ch[i]+String(ch.length-1-i)
+     i--
   }
+
   return ch1
 }
 console.log(reverseStr("hello"))
