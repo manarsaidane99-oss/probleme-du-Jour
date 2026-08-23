@@ -11,17 +11,11 @@ console.log(ex1(["manar","mana","m"]))
 function ex2(t,c){
   let v=[]
   for(let i=0;i<t.length;i++){
-    j=0
-    while(j<t[i].length){
-       if(t[i][j]===c){
-        v.push(t[i])
-        j=t[i].length
-    }
-    else{
-      j++
+    if(t[i].includes(c)){
+      v.push(t[i])
     }
   }
-}
+
     return v
 }
 console.log(ex2(["manar","mana","m"],"a"))
