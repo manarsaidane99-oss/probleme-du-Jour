@@ -19,11 +19,11 @@ function creerCafe(nbrCafe,nbrGat){
 
     }
     
-    if(x>=nbrclient&&y>=nbrclient){
+   
       x=x-nbrclient
        y=y-nbrclient
       return "Nous avons servi "+nbrclient+"  clients et il reste "+x+"  cafés et "+ y+"  petits gâteaux"
-    }
+   
 
   }
   return client
