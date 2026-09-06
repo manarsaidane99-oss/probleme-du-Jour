@@ -8,20 +8,6 @@
 // - Nombre de plats en attente
 // - Le prix total de la commande
 // - Un état indiquant si la commande est payée (true ou false)
-class commande{
-
- constructor(numero,plats,PlatsPrets,platsAttente,payee){
-  this.numero=numero
-  this.plats=plats
-  this.PlatsPrets=PlatsPrets
-  this.platsAttente=platsAttente
-  this.payee=payee
-
- }
-
-
-
-}
 
 // Créer une autre classe appelée Plat
 
@@ -66,7 +52,19 @@ class Plat{
   this.quantite=quantite
   this.pret=pret
 
+ }}
+ class commande{
+
+ constructor(numero,plats,PlatsPrets,platsAttente,payee){
+  this.numero=numero
+  this.plats=plats
+  this.PlatsPrets=PlatsPrets
+  this.platsAttente=platsAttente
+  this.payee=payee
+
  }
+
+
  ajouter(plat){
     this.plats.push(plat)
     this.platsAttente++
