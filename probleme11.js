@@ -109,7 +109,9 @@ afficherTemps (){
    this.interval=setInterval(function(){
       x.secondes-=1000
       console.log("Temps restant :"+x.secondes+"secondes")
-      if()
+      if(x.secondes===0){
+        clearInterval(x.interval)
+      }
 
    },1000)
  }
