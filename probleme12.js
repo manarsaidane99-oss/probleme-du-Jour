@@ -23,6 +23,7 @@ function evenOccurrence (arr) {
       return j
     }
   }
+  return null
 }
  
 console.log(evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]))
