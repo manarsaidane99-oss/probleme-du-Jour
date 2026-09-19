@@ -28,14 +28,13 @@ console.log(nombreDeLettres(["elle mange","c'est parti"]))
 // 3 - Écrire une fonction qui prend un tableau de nombres et affiche la moyenne de tous les nombres en utilisant foreach .
 
 function moyenne(nombres){
-  let res=[]
+  let moy=0
   nombres.forEach( nombre=>{
-    let m= nombre.toString()
-    let l=m.length
-    res.push(nombre/l)
+    moy+=nombre
+  
   
   })
-    return res
+    return moy/nombres.length
 }
 console.log(moyenne([900,100]))
 // 4 - Écrire une fonction appelée agesEnMinutes qui
@@ -77,12 +76,12 @@ console.log(moyenne([900,100]))
 // 
 
 function ageMinute(personnes){
-  let nvpersonnes=[...personnes]
-  nvpersonnes.forEach(nvpersonne=>{
-    let age=nvpersonne.age
-    nvpersonne.age=age*360*24*60
+  
+  return personnes.map(personne=>{
+    
+    return { nom:personne.nom,age:personne.age*365*24*60};
   })
-  return nvpersonnes
+ 
 }
 console.log(ageMinute([{
        nom: {
